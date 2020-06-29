@@ -27,14 +27,13 @@ _Everyone loves a cat meme! **Cat Meme Constructor** allows users to choose a ra
 ### Wireframes
 
 
-![Web and Mobile Wireframes](https://wireframe.cc/LKoNws)
+[Web and Mobile Wireframes](https://wireframe.cc/LKoNws)
 
 
 <br>
 
 ### MVP
 
-<br>
 
 #### MVP Goals
 
@@ -71,6 +70,8 @@ Sample Query Results for Random Image:
 
 ```
 
+[API TEST](https://res.cloudinary.com/alienora/image/upload/v1593430102/Screen_Shot_2020-06-28_at_3.55.39_PM_emcg1i.png)
+
 <br>
 
 
@@ -84,7 +85,6 @@ Sample Query Results for Random Image:
 
 #### MVP Components
 
-> Use this section to define your React components and the data architecture of your app.
 
 ```
 src
@@ -114,11 +114,11 @@ src
 | RandomButton  | functional |   n   |   n   |   n   | _Random function_ |
 | CategoryButton| class      |   y   |   y   |   y   | _limit 3 random images per category_ |
 | Breed Button  | class      |   y   |   y   |   y   | _limit 3 random images per breed_ |
-| NextButton    | functional |   y   |   y   |   y   | _carries chosen image to new page _ |
-| AddCaption    | class      |   y   |   y   |   y   | _add text directly onto image _ |
-| AddFilter     | class      |   y   |   y   |   y   | _add filter to image _ |
-| AddBorder     | class      |   y   |   y   |   y   | _add styled border to image _ |
-| Reset         | functional |   y   |   y   |   y   | _resets the image back to original state _ |
+| NextButton    | functional |   y   |   y   |   y   | _carries chosen image to new page_ |
+| AddCaption    | class      |   y   |   y   |   y   | _add text directly onto image_ |
+| AddFilter     | class      |   y   |   y   |   y   | _add filter to image_ |
+| AddBorder     | class      |   y   |   y   |   y   | _add styled border to image_ |
+| Reset         | functional |   y   |   y   |   y   | _resets the image back to original state_ |
 | GoBackToChoose| functional |   n   |   n   |   n   | _returns to image selector page_ |
 | SaveOption    | functional |   n   |   n   |   n   | _saves the image to the image library_ |
 
@@ -142,7 +142,7 @@ src
 ### Post-MVP
 
 - Image library, add several images to the page
-- save to your desktop
+- Save to your desktop
 - LASERS
 
 <br>
