@@ -1,5 +1,4 @@
 # CAT-MEME-CONSTRUCTOR
-_working title_
 
 - [Project Planning](#Project-Planning)
   - [Description](#Description)
@@ -21,7 +20,7 @@ _working title_
 <br>
 
 ### Description
-_Everyone loves a cat meme! **Cat Meme Constructor** allows users to choose a random image or categorized cat image and customize it with a caption, filters, and colorful borders. Save the meme (or multiple memes) to your meme library, or save them to your desktop._
+_Everyone loves a cat meme! **Cat Meme Constructor** allows users to choose a random image or categorized cat image and customize it with a caption, filters, and styled borders. Save the meme (or multiple memes) to your meme library, or save them to your desktop._
 
 <br>
 
@@ -35,19 +34,17 @@ _Everyone loves a cat meme! **Cat Meme Constructor** allows users to choose a ra
 
 ### MVP
 
-_The **Cat Meme Constructor** allows a user to choose an image and customize it. fjsfsjfjkfndkndkfdjkjgkd_
-
 <br>
 
 #### MVP Goals
 
-- _A)Make an API Call to recieve a random cat image_
-- _B)Make an API Call to choose a specific cat category (i.e. cats wearing hats) to receive a random image_
-- _C)Make an API Call to choose a specific breed of cats to recieve a library of images_
-- _Whether the user chooses A,B, or C, one image will appear in the customization station_
-- _User can add a caption_
-- _User can add add an image filter_
-- _User can add a colorful border or a styled border_
+- _A)Make an API Call to receive a random cat image._
+- _B)Make an API Call to choose a specific cat category (i.e. cats wearing hats) to receive  3 random images.User Chooses one._
+- _C)Make an API Call to choose a specific breed of cats to receive 3 random images. User Chooses one._
+- _Whether the user chooses A,B, or C, one image will appear in the customization station._
+- _User can add a caption._
+- _User can add add an image filter._
+- _User can add a colorful border or a styled border._
 - _Image can be saved to computer_
 
 <br>
@@ -91,60 +88,62 @@ Sample Query Results for Random Image:
 
 ```
 src
-|__ assets/
-      |__ data-tests
-      |__ fonts
-      |__ images
-      |__ wireframes
 |__ components/
-      |__ Header.jsx
-      |__ Hero.jsx
-      |__ Ipsum.jsx
-      |__ Lorem.jsx
-      |__ CTA.jsx
-      |__ Footer.jsx
+      |__ App.js
+      |__ RandomButton.js
+      |__ CategoryButton.js
+      |__ BreedButton.js
+      |__ NextButton.js
+      |__ AddCaption.js
+      |__ AddFilter.js
+      |__ AddBorder.js
+      |__ Reset.js
+      |__ GoBacktoChoose.js
+      |__ SaveOption.js
+   
 ```
 
 <br>
 
 #### MVP Breakdown
 
-> Use this section to go into further depth regarding every component, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
 |  Component   |    Type    | state | props | hooks | Description                                |
 | :----------: | :--------: | :---: | :---: | :---: | :----------------------------------------- |
-|    App.js    |   class    |   y   |   n   |   n   | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Header    | functional |   n   |   n   |   n   | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Navigation  | functional |   n   |   n   |   n   | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Home     | functional |   n   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Index     | functional |   n   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Detail    | functional |   n   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-|   Gallery    |   class    |   y   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-| Gallery Card | functional |   n   |   y   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Footer    | functional |   n   |   n   |   n   | _Lorem ipsum dolor sit amet, consectetur._ |
+| App.js        | class    |   y   |   y   |   n   | _Hub for routers and API_ |
+| RandomButton  | functional |   n   |   n   |   n   | _Random function_ |
+| CategoryButton| class      |   y   |   y   |   y   | _limit 3 random images per category_ |
+| Breed Button  | class      |   y   |   y   |   y   | _limit 3 random images per breed_ |
+| NextButton    | functional |   y   |   y   |   y   | _carries chosen image to new page _ |
+| AddCaption    | class      |   y   |   y   |   y   | _add text directly onto image _ |
+| AddFilter     | class      |   y   |   y   |   y   | _add filter to image _ |
+| AddBorder     | class      |   y   |   y   |   y   | _add styled border to image _ |
+| Reset         | functional |   y   |   y   |   y   | _resets the image back to original state _ |
+| GoBackToChoose| functional |   n   |   n   |   n   | _returns to image selector page_ |
+| SaveOption    | functional |   n   |   n   |   n   | _saves the image to the image library_ |
 
 <br>
 
 #### MVP Timeframes
 
-> Use this section to estimate the time necessary to build out each of the components you've described above. 
->
-> Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe.
 
-| Task             | Priority | Estimated Time | Time Invested | Actual Time |
-| ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Lorem Ipsum      |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Lorem Ipsum      |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Lorem Ipsum      |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Lorem Ipsum      |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL            |          |     6 hrs      |     3 hrs     |     TBD     |
+
+| Task                                            | Priority | Estimated Time | Time Invested |
+| ---------------------------------------------   | :------: | :------------: | :-----------: | 
+| Create components and psuedocode                |    H     |     5 hrs      |      hrs     |   
+| set up the API calls, render images on pages    |    H     |     5 hrs      |      hrs     |  
+| Creat customizing options                       |    H     |     10 hrs      |      hrs     |     
+| Button functionality                            |    H     |     10 hrs      |      hrs     |     
+| CSS                                             |    H     |     10 hrs      |      hrs     |  
+| TOTAL                                           |          |     40 hrs      |      hrs     |    
 
 <br>
 
 ### Post-MVP
 
-
+- Image library, add several images to the page
+- save to your desktop
+- LASERS
 
 <br>
 
