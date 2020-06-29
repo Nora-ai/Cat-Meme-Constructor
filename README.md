@@ -78,8 +78,8 @@ Sample Query Results for Random Image:
 
 |   Library    | Description                                |
 | :----------: | :----------------------------------------- |
-|    React     | _Lorem ipsum dolor sit amet, consectetur._ |
-| React Router | _Lorem ipsum dolor sit amet, consectetur._ |
+|    React     | _Breaks down all functionality into conponents_ |
+| React Router | _Allows for easy navigation via the URL_ |
 
 <br>
 
