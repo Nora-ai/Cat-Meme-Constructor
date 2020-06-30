@@ -7,8 +7,9 @@ class Home extends Component {
 
     render () {
         return(<>
-            <h1>Cat Memes!</h1>
-            <Link to="/choosepicture"><button>Enter</button></Link>
+            <h1>Cat/Dog Memes!</h1>
+            <Link to="/choosecat"><button>I love Cats More</button></Link>
+            <Link to="/choosedog"><button>I love Dogs More</button></Link>
         </>)
     }
 }

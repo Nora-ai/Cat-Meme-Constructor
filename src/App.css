@@ -1,0 +1,23 @@
+.random-cat-box,
+.random-dog-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat-image,
+.dog-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cat-image img {
+    width: 400px;
+    height: 100%;
+}
+
+.dog-image img {
+    width: 400px;
+    height: 100%;
+}
