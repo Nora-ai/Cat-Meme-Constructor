@@ -27,7 +27,7 @@ export default function ChooseDog () {
             <button onClick={()=>apiCall('gif')}>Random GIF</button>
             <Link to="/">Actually, I am a cat person</Link>
             <div className="dog-image"><img src={dog} alt="dog"></img></div>
-            <MakeMeme />
+            <Link to={`/makememe/${dog}`}><button>Let's make a Meme!</button></Link>
             </div>
         </>)
     

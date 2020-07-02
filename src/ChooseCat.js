@@ -17,7 +17,6 @@ export default function ChooseCat () {
         apiCall('gif')
     }, [])
   
-    
 
     return (<>
             <div className="random-cat-box">
@@ -26,9 +25,9 @@ export default function ChooseCat () {
             <button onClick={()=>apiCall('jpg,png')}>Random Image</button>
             <Link to="/">Actually, I am a Dog person</Link>
             <div className="cat-image"><img src={cat} alt="cat"></img></div> 
-            <MakeMeme />
+            <Link to={`/makememe/${cat}`}><button >Let's make a Meme!</button></Link>
             </div>
-            
+    
         </>)
     
 }

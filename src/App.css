@@ -21,3 +21,26 @@
     width: 400px;
     height: 100%;
 }
+
+.custom-header {
+    text-align: center;
+}
+
+.pic-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pic-select img {
+    width: 400px;
+    height: 100%;
+    /* border: 10px solid magenta; */
+}
+
+.add-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
