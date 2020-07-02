@@ -1,22 +1,18 @@
 import React, { Component } from 'react'
 import { useState } from 'react'
+import { useParams } from 'react-router-dom'
 
 
-export default function AddBorder () {
-    let [pinkBorder, updatePinkBorder] = useState("")
-
+export default function AddBorder (props) {
+    let [border, updateBorder] = useState("")
+    const params = useParams()
 
     const handleClick = (e) => {
         e.preventDefault()
-        updatePinkBorder(e.target.value)
-        
+        updateBorder(e.target.value)
     }
 
-
     return (<>
-    <button onClick={handleClick}>Add border</button>
-
+     <button onClick={handleClick}>Add border</button>
     </>)
 }
-
-//border: '10px solid magenta'

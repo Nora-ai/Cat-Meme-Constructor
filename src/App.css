@@ -44,3 +44,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.pink {
+    border: 10px solid magenta;
+}
+
+.blue {
+    border: 10px solid blue;
+}
