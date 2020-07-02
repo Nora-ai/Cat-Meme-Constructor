@@ -52,3 +52,11 @@
 .blue {
     border: 10px solid blue;
 }
+
+.green {
+    border: 10px solid green;
+}
+
+.greyscale {
+    filter: grayscale(100%);
+}
