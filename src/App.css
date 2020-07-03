@@ -1,12 +1,10 @@
 
 
-
 /* ***********************LANDING PAGE****************************** */
 
 .memes {
     font-size: 40px;
 }
-
 
 .landing-page {
     display: flex;
@@ -49,6 +47,15 @@
 
 
 /* ************************CHOOSE IMAGE PAGE************************** */
+
+.choose-a-dog img {
+    width: 100px;
+}
+
+.choose-a-cat img {
+    width: 95px;
+}
+
 .random-cat-box,
 .random-dog-box {
     display: flex;
@@ -56,6 +63,20 @@
     justify-content: center;
     align-items: center;
 }
+
+.random-buttons{
+    flex-direction: row;
+}
+
+.random-buttons button,
+.make-meme-button button{
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 2px;
+    background: transparent;
+    font-family: 'Roboto';
+}
+
 
 .cat-image,
 .dog-image {
@@ -89,6 +110,10 @@
     height: 100%;
     margin: 0px;
     padding: 0px;
+}
+
+.dog-person-link p {
+    text-decoration: none;
 }
 
 /* ********************CUSTOM PAGE************************** */
@@ -178,12 +203,12 @@
 }
 
 .grass img {
-    margin: 20px;
+    margin: 0px;
 }
 
 .footer {
     background-color: black;
-    height: 35px;
+    height: 15px;
     display: flex;
     align-items: flex-end;
     position: fixed;

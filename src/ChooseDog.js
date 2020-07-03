@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Route, Link } from 'react-router-dom'
 import axios from 'axios'
-import MakeMeme from './MakeMeme'
+//import MakeMeme from './MakeMeme'
+import Footer from './Footer'
 
 
 
@@ -22,12 +23,27 @@ export default function ChooseDog () {
 
     return (<>
             <div className="random-dog-box">
-            <h2>Choose a Dog</h2>
-            <button onClick={()=>apiCall('jpg,png')}>Random Image</button>
-            <button onClick={()=>apiCall('gif')}>Random GIF</button>
-            <Link to="/">Actually, I am a cat person</Link>
-            <div className="dog-image"><img src={dog} alt="dog"></img></div>
-            <Link to={`/makememe/${dog}`}><button>Let's make a Meme!</button></Link>
+                    <h2>Choose a</h2>
+                    <div className='choose-a-dog'><img src={`https://res.cloudinary.com/alienora/image/upload/v1593808232/rsz_dog_small_vwgeff.png`} alt="dog-silhouette"></img></div>
+                
+                <div className="random-buttons">
+                    <button onClick={()=>apiCall('jpg,png')}>Random Image</button>
+                    <button onClick={()=>apiCall('gif')}>Random GIF</button>
+                </div>
+                <br/>
+
+                <div className="dog-image">
+                    <img src={dog} alt="dog"></img>
+                </div>
+
+                <br/>
+                <div className="make-meme-button">
+                <Link to={`/makememe/${dog}`}><button>Let's make a Meme!</button></Link>
+                </div>
+
+                <br/>
+                <Link to="/choosecat">Actually, I am a CAT person</Link>
+                <Footer />
             </div>
         </>)
     
