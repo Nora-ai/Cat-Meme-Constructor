@@ -60,3 +60,19 @@
 .greyscale {
     filter: grayscale(100%);
 }
+
+.invert {
+    filter: invert(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.contrast {
+    filter: contrast(30%)
+}
+
+.blur {
+    filter: blur(3px);
+}

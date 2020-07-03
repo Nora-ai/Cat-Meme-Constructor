@@ -3,16 +3,15 @@ import { useState } from 'react'
 
 export default function AddCaption(props) {
     let [caption, updateCaption] = useState("")
+    let [input, updateInput] = useState("")
     //let [captionSubmitted, handleClick] = useState("")
 
     let handleClick = (e) => {
         e.preventDefault()
+        updateInput(caption)
+        updateCaption("")
         //captionSubmitted = caption
         //console.log(captionSubmitted)
-    }
-
-    let resetForm = () => {
-        updateCaption({caption: ""})
     }
 
 //    const completeCaption = captionSubmitted.length > 0 ? <p>{captionSubmitted}</p> : "" 
@@ -27,9 +26,9 @@ export default function AddCaption(props) {
                     value={caption}
                     onChange={e => updateCaption(e.target.value)}
                     />
-                <button onReset={resetForm}>ADD</button>
+                <button>ADD</button>
             </form>
-            <p>{caption}</p>
+            <p>{input}</p>
         </div>
    </>)
 
