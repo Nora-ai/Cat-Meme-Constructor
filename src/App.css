@@ -1,3 +1,54 @@
+
+
+
+/* ***********************LANDING PAGE****************************** */
+
+.memes {
+    font-size: 40px;
+}
+
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dog-hover {
+    font-size: 35px;
+}
+
+.dog-hover:hover {
+    color: orangered;
+}
+
+.cat-hover {
+    font-size: 35px;
+}
+
+.cat-hover:hover {
+    color:  orangered;
+}
+
+.animal-flex {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.cat-button img {
+    width: 200px;
+    height: 100%;
+}
+
+.dog-button img {
+    width: 225px;
+    height: 100%;
+}
+
+
+/* ************************CHOOSE IMAGE PAGE************************** */
 .random-cat-box,
 .random-dog-box {
     display: flex;
@@ -36,14 +87,42 @@
 .pic-select img {
     width: 400px;
     height: 100%;
-    /* border: 10px solid magenta; */
+    margin: 0px;
+    padding: 0px;
 }
 
+/* ********************CUSTOM PAGE************************** */
 .add-caption {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.caption {
+    position: absolute;
+    top: 100px;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* *****filters*********CUSTOM PAGE************filters******* */
+
+.border-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+}
+
 
 .pink {
     border: 10px solid magenta;
@@ -75,4 +154,41 @@
 
 .blur {
     filter: blur(3px);
+}
+
+.reset-button {
+    display: flex;
+    justify-content: center;
+}
+
+.reset {
+    border: none;
+    filter: none;
+    
+}
+
+/* *********************FOOTER********************** */
+
+.grass {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.grass img {
+    margin: 20px;
+}
+
+.footer {
+    background-color: black;
+    height: 35px;
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+   
 }

@@ -20,12 +20,16 @@ export default function ChooseCat () {
 
     return (<>
             <div className="random-cat-box">
-            <h2>Choose a Cat</h2> 
-            <button onClick={()=>apiCall('gif')}>Random GIF</button>
-            <button onClick={()=>apiCall('jpg,png')}>Random Image</button>
-            <Link to="/">Actually, I am a Dog person</Link>
-            <div className="cat-image"><img src={cat} alt="cat"></img></div> 
-            <Link to={`/makememe/${cat}`}><button >Let's make a Meme!</button></Link>
+                <h2>Choose a Cat</h2> 
+                <button onClick={()=>apiCall('gif')}>Random GIF</button>
+                <br/>
+                <button onClick={()=>apiCall('jpg,png')}>Random Image</button>
+                <br/>
+                <Link to="/">Actually, I am a Dog person</Link>
+                <br/>
+                <div className="cat-image"><img src={cat} alt="cat"></img></div> 
+                <br/>
+                <Link to={`/makememe/${cat}`}><button >Let's make a Meme!</button></Link>
             </div>
     
         </>)
