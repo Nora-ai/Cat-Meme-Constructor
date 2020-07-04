@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 //import MakeMeme from './MakeMeme'
 import Footer from './Footer'
@@ -42,7 +42,8 @@ export default function ChooseDog () {
                 </div>
 
                 <br/>
-                <Link to="/choosecat">Actually, I am a CAT person</Link>
+                <Link to="/choosecat" style={{textDecoration: 'none', color: 'black'}}>Actually, I am a CAT person</Link>
+                <div className="space-needed"></div>
                 <Footer />
             </div>
         </>)

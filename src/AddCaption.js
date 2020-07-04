@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { useState } from 'react'
 
 export default function AddCaption(props) {
@@ -13,15 +13,13 @@ export default function AddCaption(props) {
 
     return (<>
         <div className="add-caption">
-            <p>ADD A CAPTION</p>
             <form onSubmit={handleClick}> 
                 <input 
                     type='text'
-                    placeholder="caption" 
+                    placeholder="type caption > hit enter" 
                     value={input}
                     onChange={e => updateInput(e.target.value)}
                     />
-                <button>ADD</button>
             </form>
             <p className="caption">{caption}</p>
         </div>

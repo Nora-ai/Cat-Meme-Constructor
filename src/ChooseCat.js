@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 //import MakeMeme from './MakeMeme'
 import Footer from './Footer'
@@ -38,14 +38,14 @@ export default function ChooseCat () {
 
                 <br/>
                 <div className="make-meme-button">
-                    <Link to={`/makememe/${cat}`}><button >Let's make a Meme!</button></Link>
+                    <Link to={`/makememe/${cat}`}><button>Let's make a Meme!</button></Link>
                     </div>
-                    
+
                 <br/>
-                <p className="dog-person-link">
-                    <Link to="/choosedog">Actually, I am a DOG person</Link>
-                    </p>
-                
+                <div className="dog-person-link">
+                    <Link to="/choosedog" style={{textDecoration: 'none', color: 'black'}}><p>Actually, I am a DOG person</p></Link>
+                    </div>
+                <div className="space-needed"></div>
                 <Footer />
             </div>
     

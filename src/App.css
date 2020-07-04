@@ -2,7 +2,7 @@
 
 /* ***********************LANDING PAGE****************************** */
 
-.memes {
+.meme-ix {
     font-size: 40px;
 }
 
@@ -33,6 +33,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
+    margin-top: 60px;
 }
 
 .cat-button img {
@@ -72,9 +73,12 @@
 .make-meme-button button{
     margin: 10px;
     border: 2px solid black;
-    border-radius: 2px;
-    background: transparent;
+    border-radius: 3px;
+    background: black;
+    color: white;
     font-family: 'Roboto';
+    width: 150px;
+    height: 40px;
 }
 
 
@@ -102,21 +106,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    width: 400px;
+    margin: 0 auto;
+    padding-bottom: 0;
 }
 
 .pic-select img {
     width: 400px;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
 }
 
 .dog-person-link p {
     text-decoration: none;
 }
 
-/* ********************CUSTOM PAGE************************** */
+/* **************************MAKEMEME PAGE***************************** */
+
+.custom-header img {
+    width: 100px;
+    height: 100%;
+}
+
+
 .add-caption {
     display: flex;
     justify-content: center;
@@ -126,21 +137,74 @@
 .caption {
     position: absolute;
     top: 100px;
-    background-color: white;
-    color: black;
+    color: white;
+    text-shadow: 2px 2px black;
     font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    width: 300px;
 }
 
 
-/* *****filters*********CUSTOM PAGE************filters******* */
+/* **FILTERS*****MAKEMEME PAGE*****FILTERS*** */
+
+
+.add-caption {
+    height: 50px;
+}
+
+.add-caption input {
+    height: 20px;
+    width: 300px;
+    font-style: italic;
+    text-align: center;
+}
+
+.style-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.style-buttons button {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+    background: black;
+    color: white;
+    font-family: 'Roboto';
+    width: 100px;
+    height: 40px;
+}
+
+.solid {
+    border: 10px solid;
+}
+
+.dotted {
+    border: 10px dotted;
+}
+
+.dashed {
+    border: 10px dashed;
+}
+
+.double {
+    border: 10px double;
+}
 
 .border-buttons {
     display: flex;
     justify-content: center;
+}
+
+.border-buttons button {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+    background: black;
+    color: white;
+    font-family: 'Roboto';
+    width: 100px;
+    height: 40px;
 }
 
 .filter-buttons {
@@ -148,37 +212,49 @@
     justify-content: center;
 }
 
+.filter-buttons button {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+    background: black;
+    color: white;
+    font-family: 'Roboto';
+    width: 100px;
+    height: 40px;
+}
 
-.pink {
-    border: 10px solid magenta;
+.orange {
+    border-color: orangered;
 }
 
 .blue {
-    border: 10px solid blue;
+    border-color: blue;
 }
 
 .green {
-    border: 10px solid green;
+    border-color: greenyellow;
+}
+
+.black {
+    border-color: black;
 }
 
 .greyscale {
     filter: grayscale(100%);
-}
-
-.invert {
-    filter: invert(100%);
+    padding: 0;
+    margin: 0;
 }
 
 .sepia {
     filter: sepia(100%);
 }
 
-.contrast {
-    filter: contrast(30%)
+.blur {
+    filter: blur(2px);
 }
 
-.blur {
-    filter: blur(3px);
+.invert {
+    filter: invert(100%);
 }
 
 .reset-button {
@@ -186,34 +262,41 @@
     justify-content: center;
 }
 
-.reset {
-    border: none;
-    filter: none;
-    
+.reset-button button {
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    width: 100px;
+    height: 30px;
 }
 
+
 /* *********************FOOTER********************** */
+
+.space-needed {
+    height: 170px;
+}
 
 .grass {
     display: flex;
     position: fixed;
+    justify-content: center;
     left: 0;
     bottom: 0;
     width: 100%;
 }
 
 .grass img {
-    margin: 0px;
+    width: 100%;
 }
 
 .footer {
     background-color: black;
-    height: 15px;
+    height: 20px;
     display: flex;
     align-items: flex-end;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-   
 }
