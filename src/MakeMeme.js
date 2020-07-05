@@ -31,8 +31,8 @@ export default function MakeMeme (props) {
     }
 
     return (<>
-    <div className="custom-header">
-        <h2><Link to='/' style={{textDecoration: 'none', color: 'black'}}>Meme-ix </Link></h2>
+    <div className="meme-ix-two">
+        <h2><Link to='/' style={{textDecoration: 'none', color: 'black'}}>MEME-<span className="ix-flash">IX</span></Link></h2>
     </div>
 
     <div className="media">

@@ -4,9 +4,11 @@
 /* ***********************LANDING PAGE****************************** */
 
 
-
 .meme-ix {
     font-size: 40px;
+}
+
+.ix-flash {
     animation: blinkingText 2s infinite;
 }
 @keyframes blinkingText {
@@ -35,17 +37,17 @@
     font-size: 35px;
 }
 
-.dog-hover:hover {
+/* .dog-hover:hover {
     color: orangered;
-}
+} */
 
 .cat-hover {
     font-size: 35px;
 }
 
-.cat-hover:hover {
-    color:  orangered;
-}
+/* .cat-hover:hover {
+    font-size: 45px;
+} */
 
 .animal-flex {
     display: flex;
@@ -138,6 +140,14 @@
 
 /* **************************MAKEMEME PAGE***************************** */
 
+.meme-ix-two {
+    display: flex;
+    justify-content: center;
+}
+
+.meme-ix-two h2 {
+    font-size: 40px;
+}
 
 .add-caption {
     display: flex;
@@ -335,12 +345,12 @@
 }
 
 .nora-for-web-dev:hover {
-    color: greenyellow;
     font-size: 12px;
     padding-bottom: 7px;
     margin: 0;
     position: fixed;
     bottom: 0; 
+    animation: blinkingText 2s infinite;
 }
 
 
@@ -351,11 +361,6 @@
     
     .meme-ix {
         margin-top: 40px;
-    }
-
-    .custom-header h2 {
-        margin-bottom: 30px;
-        font-size: 30px;
     }
 
     .are-you-a {
@@ -402,6 +407,11 @@
 
     .media {
         display: flex;
+    }
+
+    .meme-ix-two h2 {
+        margin-bottom: 30px;
+        font-size: 30px;
     }
 
     .add-caption {

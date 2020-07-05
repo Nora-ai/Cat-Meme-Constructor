@@ -9,7 +9,7 @@ class Home extends Component {
     render () {
         return(<>
             <div className="landing-page">
-                <h1 className="meme-ix">MEME-IX</h1>
+                <h1 className="meme-ix">MEME-<span className="ix-flash">IX</span></h1>
                 <div className="are-you-a">
                 <h2>Are you a <span className="dog-hover">dog</span> person?</h2>
                 <h2>or a <span className="cat-hover">cat</span> person?</h2>
