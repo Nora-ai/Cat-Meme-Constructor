@@ -16,11 +16,11 @@ export default function AddCaption(props) {
             <form onSubmit={handleClick}> 
                 <input 
                     type='text'
-                    placeholder="type caption > hit enter" 
+                    placeholder="type caption" 
                     value={input}
                     onChange={e => updateInput(e.target.value)}
                     />
-                <button className="add-button">Add</button>
+                <button className="add-button">+</button>
             </form>
             <p className="caption">{caption}</p>
         </div>

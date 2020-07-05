@@ -303,7 +303,7 @@
 
     .custom-header h2 {
         margin-bottom: 30px;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .are-you-a {
@@ -348,8 +348,12 @@
     }
 
     .add-caption {
-        margin: 30px;
+        margin: 20px;
+    }
+
+    .add-caption form {
         display: flex;
+        flex-direction: row;
     }
 
     .caption {
@@ -358,13 +362,16 @@
     }
 
     .add-caption input {
-        width: 280px;
+        width: 250px;
     }
 
     .add-button {
         display: flex;
         background-color: black;
         color: white;
+        font-style: bold;
+        font-size: 16px;
+        align-items: center;
     }
 
     .style-buttons button,
@@ -390,6 +397,6 @@
    
 
     .space-needed {
-        height: 75px;
+        height: 175px;
     }
 }
