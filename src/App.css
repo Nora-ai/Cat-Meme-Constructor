@@ -2,6 +2,7 @@
 
 /* ***********************LANDING PAGE****************************** */
 
+
 .meme-ix {
     font-size: 40px;
 }
@@ -37,13 +38,14 @@
 }
 
 .cat-button img {
-    width: 200px;
+    width: 250px;
     height: 100%;
 }
 
 .dog-button img {
     width: 225px;
     height: 100%;
+    margin-bottom: 3px;
 }
 
 
@@ -54,7 +56,7 @@
 }
 
 .choose-a-cat img {
-    width: 95px;
+    width: 110px;
 }
 
 .random-cat-box,
@@ -263,6 +265,20 @@
 }
 
 
+/* *********************HEADER********************** */
+
+.header {
+    background-color: black;
+    height: 20px;
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
 /* *********************FOOTER********************** */
 
 .space-needed {
@@ -293,6 +309,16 @@
     width: 100%;
 }
 
+.footer:hover {
+    height: 40px;
+}
+
+.web-dev-nora:hover {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
 /* *********************MEDIA QUERIES*************************** */
 
 @media (min-width: 320px) and (max-width: 812px) {
@@ -321,10 +347,11 @@
     .dog-button img {
         width: 120px;
         height: 100%;
+        margin-bottom: 3px;
     }
 
     .cat-button img {
-        width: 110px;
+        width: 125px;
         height: 100%;
     }
 
@@ -357,12 +384,12 @@
     }
 
     .caption {
-        top: 120px;
+        top: 110px;
         font-size: 20px;
     }
 
     .add-caption input {
-        width: 250px;
+        width: 225px;
     }
 
     .add-button {
@@ -372,6 +399,8 @@
         font-style: bold;
         font-size: 16px;
         align-items: center;
+        width: 25px;
+        border-radius: 3px;
     }
 
     .style-buttons button,
@@ -399,4 +428,14 @@
     .space-needed {
         height: 175px;
     }
+
+
+    .footer {
+        height: 10px;
+    }
+
+    .footer:hover {
+        height: 30px;
+    }
+
 }

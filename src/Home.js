@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router-dom'
+import Header from './Header'
 import Footer from './Footer'
 
 class Home extends Component {
@@ -8,9 +9,9 @@ class Home extends Component {
 
     render () {
         return(<>
+            <Header />
             <div className="landing-page">
                 <h1 className="meme-ix">MEME-IX</h1>
-                
                 <div className="are-you-a">
                 <h2>Are you a <span className="dog-hover">dog</span> person?</h2>
                 <h2>or a <span className="cat-hover">cat</span> person?</h2>
@@ -23,7 +24,7 @@ class Home extends Component {
                 </Link>
 
                 <Link to="/choosecat">
-                    <div className="cat-button"><img src={`https://res.cloudinary.com/alienora/image/upload/v1593795750/cat_png_owqiym.png`} alt="cat-silhoutte"></img></div>
+                    <div className="cat-button"><img src={`https://res.cloudinary.com/alienora/image/upload/v1593973140/56884483-vector-black-silhouette-of-a-walking-cat-_dxtlqm.png`} alt="cat-silhoutte"></img></div>
                 </Link>
             </div>
             <Footer />
