@@ -147,6 +147,9 @@
     text-align: center;
 }
 
+.add-button {
+    display: none;
+}
 
 /* **FILTERS*****MAKEMEME PAGE*****FILTERS*** */
 
@@ -294,23 +297,34 @@
 
 @media (min-width: 320px) and (max-width: 812px) {
     
+    .meme-ix {
+        margin-top: 40px;
+    }
+
     .custom-header h2 {
-        margin: 40px;
+        margin-bottom: 30px;
         font-size: 40px;
+    }
+
+    .are-you-a {
+        margin-top: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .animal-flex {
         display: flex;
-        margin-top: 150px;
+        margin-top: 100px;
     }
     
     .dog-button img {
-        width: 100px;
+        width: 120px;
         height: 100%;
     }
 
     .cat-button img {
-        width: 90px;
+        width: 110px;
         height: 100%;
     }
 
@@ -335,15 +349,22 @@
 
     .add-caption {
         margin: 30px;
+        display: flex;
     }
 
     .caption {
-        top: 150px;
+        top: 120px;
         font-size: 20px;
     }
 
     .add-caption input {
         width: 280px;
+    }
+
+    .add-button {
+        display: flex;
+        background-color: black;
+        color: white;
     }
 
     .style-buttons button,
@@ -369,6 +390,6 @@
    
 
     .space-needed {
-        height: 10px;
+        height: 75px;
     }
 }
