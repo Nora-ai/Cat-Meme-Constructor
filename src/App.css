@@ -37,17 +37,9 @@
     font-size: 35px;
 }
 
-/* .dog-hover:hover {
-    color: orangered;
-} */
-
 .cat-hover {
     font-size: 35px;
 }
-
-/* .cat-hover:hover {
-    font-size: 45px;
-} */
 
 .animal-flex {
     display: flex;
@@ -323,9 +315,9 @@
     width: 100%;
 }
 
-.grass img {
+/* .grass img {
     width: 75%;
-}
+} */
 
 .footer {
     background-color: black;
@@ -355,10 +347,12 @@
 
 
 /* *********************MEDIA QUERIES*************************** */
-/* mobile */
+/* MOBILE */
 
-@media (min-width: 320px) and (max-width: 812px) {
+@media (min-width: 320px) and (max-width: 767px) {
     
+/* page 1 */
+
     .meme-ix {
         margin-top: 40px;
     }
@@ -385,6 +379,8 @@
         width: 125px;
         height: 100%;
     }
+
+/* page 2 */
 
     .cat-image img,
     .dog-image img {
@@ -468,6 +464,8 @@
         height: 25px;
     }
 
+/* footer */
+
     .space-needed {
         height: 175px;
     }
@@ -488,8 +486,51 @@
 /* *****************MEDIA QUERIES***************** */
 /* LARGE */
 
+
 @media (min-width: 813px) {
     .grass img {
        display: none;
     }
+}
+
+/* ***************MEDIA QUERIES******************* */
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1024) {
+
+/* page 1 */
+
+    .are-you-a {
+        margin-top: 40px;
+    }
+
+    .cat-button img {
+        width: 300px;
+    }
+    
+    .dog-button img {
+        width: 300px;
+    }
+
+/* page 2 */
+
+    .choose-a-dog img {
+        margin-bottom: 30px;
+    }
+
+    .choose-a-cat img {
+        margin-bottom: 30px;
+    }
+
+
+/* page 3 */
+
+
+/* footer */
+
+    .grass img {
+        width: 100px;
+    }
+
+
 }
