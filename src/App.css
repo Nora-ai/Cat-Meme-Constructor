@@ -122,16 +122,12 @@
 
 /* **************************MAKEMEME PAGE***************************** */
 
-.custom-header img {
-    width: 100px;
-    height: 100%;
-}
-
 
 .add-caption {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50px;
 }
 
 .caption {
@@ -144,20 +140,15 @@
     width: 300px;
 }
 
-
-/* **FILTERS*****MAKEMEME PAGE*****FILTERS*** */
-
-
-.add-caption {
-    height: 50px;
-}
-
 .add-caption input {
     height: 20px;
     width: 300px;
     font-style: italic;
     text-align: center;
 }
+
+
+/* **FILTERS*****MAKEMEME PAGE*****FILTERS*** */
 
 .style-buttons {
     display: flex;
@@ -241,8 +232,6 @@
 
 .greyscale {
     filter: grayscale(100%);
-    padding: 0;
-    margin: 0;
 }
 
 .sepia {
@@ -299,4 +288,87 @@
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+/* *********************MEDIA QUERIES*************************** */
+
+@media (min-width: 320px) and (max-width: 812px) {
+    
+    .custom-header h2 {
+        margin: 40px;
+        font-size: 40px;
+    }
+
+    .animal-flex {
+        display: flex;
+        margin-top: 150px;
+    }
+    
+    .dog-button img {
+        width: 100px;
+        height: 100%;
+    }
+
+    .cat-button img {
+        width: 90px;
+        height: 100%;
+    }
+
+    .cat-image img,
+    .dog-image img {
+        width: 300px;
+        height: 100%;
+    }
+
+    .pic-select {
+        width: 300px;
+    }
+
+    .pic-select img {
+        width: 300px;
+        height: 100%;
+    }
+
+    .media {
+        display: flex;
+    }
+
+    .add-caption {
+        margin: 30px;
+    }
+
+    .caption {
+        top: 150px;
+        font-size: 20px;
+    }
+
+    .add-caption input {
+        width: 280px;
+    }
+
+    .style-buttons button,
+    .border-buttons button,
+    .filter-buttons button {
+        margin: 5px;
+        border: 2px solid black;
+        border-radius: 3px;
+        background: black;
+        color: white;
+        font-family: 'Roboto';
+        width: 65px;
+        height: 30px;
+    }
+
+    .reset-button button {
+        background-color: black;
+        color: white;
+        border-radius: 3px;
+        width: 65px;
+        height: 25px;
+    }
+   
+
+    .space-needed {
+        height: 10px;
+    }
 }

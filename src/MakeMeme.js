@@ -35,10 +35,11 @@ export default function MakeMeme (props) {
         <h2><Link to='/' style={{textDecoration: 'none', color: 'black'}}>Meme-ix </Link></h2>
     </div>
 
+    <div className="media">
          <div className={`pic-select ${borderColor} ${style}`}>
              <div className= {`${filter}`}><img src={animalLink} alt="animalimage"></img></div>
          </div>
-
+    </div>
          <AddCaption />
 
     
