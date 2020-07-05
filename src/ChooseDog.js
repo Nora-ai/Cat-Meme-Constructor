@@ -23,8 +23,7 @@ export default function ChooseDog () {
 
     return (<>
             <div className="random-dog-box">
-                    {/* <h2>Choose a</h2> */}
-                    <div className='choose-a-dog'><img src={`https://res.cloudinary.com/alienora/image/upload/v1593808232/rsz_dog_small_vwgeff.png`} alt="dog-silhouette"></img></div>
+                    <Link to='/'><div className='choose-a-dog'><img src={`https://res.cloudinary.com/alienora/image/upload/v1593808232/rsz_dog_small_vwgeff.png`} alt="dog-silhouette"></img></div></Link>
                 
                 <div className="random-buttons">
                     <button onClick={()=>apiCall('jpg,png')}>Random Image</button>

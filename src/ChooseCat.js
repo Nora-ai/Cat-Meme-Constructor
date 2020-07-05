@@ -21,8 +21,7 @@ export default function ChooseCat () {
 
     return (<>
             <div className="random-cat-box">
-                    {/* <h2>Choose a</h2>  */}
-                    <div className='choose-a-cat'><img src={`https://res.cloudinary.com/alienora/image/upload/v1593973140/56884483-vector-black-silhouette-of-a-walking-cat-_dxtlqm.png`} alt="cat-silhouette"></img></div>
+                    <Link to='/'><div className='choose-a-cat'><img src={`https://res.cloudinary.com/alienora/image/upload/v1593973140/56884483-vector-black-silhouette-of-a-walking-cat-_dxtlqm.png`} alt="cat-silhouette"></img></div></Link>
                 <br/>
                
                 <div className="random-buttons">

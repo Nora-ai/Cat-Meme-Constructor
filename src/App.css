@@ -1,5 +1,6 @@
 
 
+
 /* ***********************LANDING PAGE****************************** */
 
 
@@ -90,7 +91,6 @@
     width: 150px;
     height: 40px;
 }
-
 
 .cat-image,
 .dog-image {
@@ -286,14 +286,15 @@
 }
 
 .grass img {
-    width: 100%;
+    width: 75%;
 }
 
 .footer {
     background-color: black;
     height: 20px;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -301,16 +302,22 @@
 }
 
 .footer:hover {
-    height: 40px;
+    height: 30px;
+    align-items: center;
 }
 
-.web-dev-nora:hover {
-    color: white;
-    display: flex;
-    justify-content: center;
+.nora-for-web-dev:hover {
+    color: greenyellow;
+    font-size: 12px;
+    padding-bottom: 7px;
+    margin: 0;
+    position: fixed;
+    bottom: 0; 
 }
+
 
 /* *********************MEDIA QUERIES*************************** */
+/* mobile */
 
 @media (min-width: 320px) and (max-width: 812px) {
     
@@ -424,6 +431,9 @@
         height: 175px;
     }
 
+    .grass img {
+        width: 100%;
+    }
 
     .footer {
         height: 20px;
@@ -433,4 +443,13 @@
         height: 30px;
     }
 
+}
+
+/* *****************MEDIA QUERIES***************** */
+/* LARGE */
+
+@media (min-width: 813px) {
+    .grass img {
+       display: none;
+    }
 }
