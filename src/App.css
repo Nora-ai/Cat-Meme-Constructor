@@ -4,8 +4,17 @@
 /* ***********************LANDING PAGE****************************** */
 
 
+
 .meme-ix {
     font-size: 40px;
+    animation: blinkingText 2s infinite;
+}
+@keyframes blinkingText {
+    0%{color:red}
+    49%{color: green}
+    60%{color: yellow}
+    99%{color: purple}
+    100%{color: blue}
 }
 
 .landing-page {
@@ -181,7 +190,7 @@
 }
 
 .dotted {
-    border: 10px dotted;
+    border: 15px dotted;
 }
 
 .dashed {
@@ -224,13 +233,32 @@
     height: 40px;
 }
 
-.orange {
-    border-color: orangered;
+
+.rainbow {
+    animation: blinkingBorderA 2s infinite;
+}
+@keyframes blinkingBorderA {
+    0%{color:red}
+    32%{color: orange}
+    49%{color: yellow}
+    60%{color: green}
+    99%{color: blue}
+    100%{color: purple}
 }
 
 .blue {
-    border-color: blue;
+    animation: blinkingBorderB 3s infinite;
 }
+
+@keyframes blinkingBorderB {
+    0%{color: pink}
+    49%{color: lightblue}
+    60%{color: lightcoral}
+    99%{color: aquamarine}
+    100%{color: aqua}
+}
+
+
 
 .green {
     border-color: greenyellow;
@@ -418,6 +446,10 @@
         height: 30px;
     }
 
+    .dotted {
+        border-width: 10px;
+    }
+
     .reset-button button {
         background-color: black;
         color: white;
@@ -425,7 +457,6 @@
         width: 65px;
         height: 25px;
     }
-   
 
     .space-needed {
         height: 175px;
@@ -442,7 +473,6 @@
     .footer:hover {
         height: 30px;
     }
-
 }
 
 /* *****************MEDIA QUERIES***************** */

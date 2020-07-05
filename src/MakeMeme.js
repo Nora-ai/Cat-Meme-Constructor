@@ -51,7 +51,7 @@ export default function MakeMeme (props) {
     </div>
         <br/>
     <div className="border-buttons">
-         <button onClick={() => handleClickColor('orange')}>Orange</button>
+         <button onClick={() => handleClickColor('rainbow')}>Rainbow</button>
          <button onClick={() => handleClickColor('blue')}>Blue</button>
          <button onClick={() => handleClickColor('green')}>Green</button>
          <button onClick={() => handleClickColor('black')}>Black</button>
