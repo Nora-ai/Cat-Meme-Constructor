@@ -14,6 +14,13 @@
     align-items: center;
 }
 
+.are-you-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .dog-hover {
     font-size: 35px;
 }
@@ -65,6 +72,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 .random-buttons{
@@ -91,12 +99,12 @@
     align-items: center;
 }
 .cat-image img {
-    width: 400px;
+    width: 450px;
     height: 100%;
 }
 
 .dog-image img {
-    width: 400px;
+    width: 450px;
     height: 100%;
 }
 
@@ -108,19 +116,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 450px;
     margin: 0 auto;
     padding-bottom: 0;
 }
 
 .pic-select img {
-    width: 400px;
+    width: 450px;
     height: 100%;
 }
 
-.dog-person-link p {
-    text-decoration: none;
-}
 
 /* **************************MAKEMEME PAGE***************************** */
 
@@ -265,20 +270,6 @@
 }
 
 
-/* *********************HEADER********************** */
-
-.header {
-    background-color: black;
-    height: 20px;
-    display: flex;
-    align-items: flex-end;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-
 /* *********************FOOTER********************** */
 
 .space-needed {
@@ -370,6 +361,10 @@
         height: 100%;
     }
 
+    .random-buttons button {
+        width: 140px;
+    }
+
     .media {
         display: flex;
     }
@@ -389,7 +384,7 @@
     }
 
     .add-caption input {
-        width: 225px;
+        width: 240px;
     }
 
     .add-button {
@@ -431,7 +426,7 @@
 
 
     .footer {
-        height: 10px;
+        height: 20px;
     }
 
     .footer:hover {

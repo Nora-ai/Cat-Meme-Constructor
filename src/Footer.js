@@ -9,7 +9,7 @@ export default function Footer () {
 
         </div>
         <div className="footer">
-            <p className="web-dev-nora">Web Dev Nora 2020</p>
+            <p className="web-dev-nora"></p>
         </div>
 
     </>)

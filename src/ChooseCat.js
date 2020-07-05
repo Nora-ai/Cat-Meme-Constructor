@@ -21,7 +21,7 @@ export default function ChooseCat () {
 
     return (<>
             <div className="random-cat-box">
-                    <h2>Choose a</h2> 
+                    {/* <h2>Choose a</h2>  */}
                     <div className='choose-a-cat'><img src={`https://res.cloudinary.com/alienora/image/upload/v1593973140/56884483-vector-black-silhouette-of-a-walking-cat-_dxtlqm.png`} alt="cat-silhouette"></img></div>
                 <br/>
                
@@ -42,9 +42,8 @@ export default function ChooseCat () {
                     </div>
 
                 <br/>
-                <div className="dog-person-link">
-                    <Link to="/choosedog" style={{textDecoration: 'none', color: 'black'}}><p>Actually, I am a DOG person</p></Link>
-                    </div>
+                <Link to="/choosedog" style={{textDecoration: 'none', color: 'black'}}>Actually, I am a DOG person</Link>
+                   
                 <div className="space-needed"></div>
                 <Footer />
             </div>

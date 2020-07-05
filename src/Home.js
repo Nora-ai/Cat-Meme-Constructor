@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router-dom'
-import Header from './Header'
 import Footer from './Footer'
 
 class Home extends Component {
@@ -9,7 +8,6 @@ class Home extends Component {
 
     render () {
         return(<>
-            <Header />
             <div className="landing-page">
                 <h1 className="meme-ix">MEME-IX</h1>
                 <div className="are-you-a">
