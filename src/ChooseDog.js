@@ -4,14 +4,11 @@ import axios from 'axios'
 //import MakeMeme from './MakeMeme'
 import Footer from './Footer'
 
-
-
 export default function ChooseDog () {
     let [dog, updateDog] = useState([])
 
     const apiCall = async (type) => {
         const data = await axios(`https://api.thedogapi.com/v1/images/search?mime_types=${type}&api_key=${process.env.REACT_APP_API_KEY_DOG}`)
-        console.log(data.data[0].url)
         updateDog(data.data[0].url)
         }
 

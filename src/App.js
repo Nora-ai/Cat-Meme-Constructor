@@ -10,7 +10,6 @@ import MakeMeme from './MakeMeme'
 class App extends Component {
     constructor(props) {
         super()
-    console.log(props)
     }
 
 render () {

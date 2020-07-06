@@ -1,8 +1,23 @@
+/* *********************VIDEO BACKGROUND********************* */
 
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
 
-
-/* ***********************LANDING PAGE****************************** */
-
+.fullscreen-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* ***********************LANDING PAGE*********************** */
 
 .meme-ix {
     font-size: 40px;
@@ -60,7 +75,7 @@
 }
 
 
-/* ************************CHOOSE IMAGE PAGE************************** */
+/* **********************CHOOSE IMAGE PAGE*********************** */
 
 .choose-a-dog img {
     width: 100px;
@@ -128,7 +143,6 @@
     width: 450px;
     height: 100%;
 }
-
 
 /* **************************MAKEMEME PAGE***************************** */
 
@@ -235,7 +249,6 @@
     height: 40px;
 }
 
-
 .rainbow {
     animation: blinkingBorderA 2s infinite;
 }
@@ -259,7 +272,6 @@
     99%{color: aquamarine}
     100%{color: aqua}
 }
-
 
 
 .green {
@@ -531,6 +543,5 @@
     .grass img {
         width: 100px;
     }
-
 
 }

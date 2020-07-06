@@ -2,12 +2,14 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router-dom'
 import Footer from './Footer'
+import Video from './Video'
 
 class Home extends Component {
     
 
     render () {
         return(<>
+            <Video />
             <div className="landing-page">
                 <h1 className="meme-ix">MEME-<span className="ix-flash">IX</span></h1>
                 <div className="are-you-a">
