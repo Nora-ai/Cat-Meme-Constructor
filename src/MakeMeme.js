@@ -42,7 +42,7 @@ export default function MakeMeme (props) {
     </div>
          <AddCaption />
 
-    
+    <p className="button-title">Border Style</p>
     <div className="style-buttons">
         <button onClick={() => handleClickStyle('solid')}>Solid</button>
         <button onClick={() => handleClickStyle('dotted')}>Dotted</button>
@@ -50,6 +50,7 @@ export default function MakeMeme (props) {
         <button onClick={() => handleClickStyle('double')}>Double</button>
     </div>
         <br/>
+    <p className="button-title">Border Color</p>
     <div className="border-buttons">
          <button onClick={() => handleClickColor('rainbow')}>Rainbow</button>
          <button onClick={() => handleClickColor('iridescent')}>Iridescent</button>
@@ -57,6 +58,7 @@ export default function MakeMeme (props) {
          <button onClick={() => handleClickColor('white')}>White</button>
     </div>
         <br/>
+    <p className="button-title">Filter</p>
     <div className="filter-buttons">
          <button onClick={() => handleClickFilter('greyscale')}>Grey</button>
          <button onClick={() => handleClickFilter('invert')}>Scary</button>

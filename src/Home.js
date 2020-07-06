@@ -13,8 +13,8 @@ class Home extends Component {
             <div className="landing-page">
                 <h1 className="meme-ix">MEME-<span className="ix-flash">IX</span></h1>
                 <div className="are-you-a">
-                <h2>Are you a <span className="dog-hover">dog</span> person?</h2>
-                <h2>or a <span className="cat-hover">cat</span> person?</h2>
+                <h2 className="are-you-a-dog">Are you a <span className="dog-hover">dog</span> person?</h2>
+                <h2 className="are-you-a-cat">or a <span className="cat-hover">cat</span> person?</h2>
                 </div>
             </div>
 

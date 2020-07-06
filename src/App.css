@@ -51,6 +51,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
+}
+
+.are-you-a-dog {
+    padding-top: 150px;
+}
+
+.are-you-a-cat {
+    margin: 0;
 }
 
 .dog-hover {
@@ -195,6 +204,14 @@ body {
 }
 
 /* **FILTERS*****MAKEMEME PAGE*****FILTERS*** */
+
+.button-title {
+    color: white;
+    margin: 0 auto;
+    font-size: 12px;
+    color: grey;
+    text-align: center;
+}
 
 .style-buttons {
     display: flex;
@@ -380,16 +397,24 @@ body {
         margin-bottom: 100px;
     }
 
-    .are-you-a {
-        margin-top: 20px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
+    .are-you-a h2{
+        margin-top: 10px;
+        padding: 0;
+        font-size: 20px;
     }
 
+    .are-you-a-dog {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .dog-hover,
+    .cat-hover {
+        font-size: 30px;
+    }
     .animal-flex {
         display: flex;
-        margin-top: 30px;
+        margin-top: 40px;
     }
     
     .dog-button img {
@@ -518,7 +543,7 @@ body {
 /* page 1 */
 
     .are-you-a {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .cat-button img {
