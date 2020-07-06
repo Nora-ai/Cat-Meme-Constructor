@@ -20,7 +20,7 @@ export default function ChooseDog () {
 
     return (<>
             <div className="random-dog-box">
-                    <Link to='/'><div className='choose-a-dog'><img src={`https://res.cloudinary.com/alienora/image/upload/v1593808232/rsz_dog_small_vwgeff.png`} alt="dog-silhouette"></img></div></Link>
+                    <Link to='/'><div className='choose-a-dog'><img src={`https://res.cloudinary.com/alienora/image/upload/v1594000878/rsz_dog_small_vwgeff-white_ldnoco.png`} alt="dog-silhouette"></img></div></Link>
                 
                 <div className="random-buttons">
                     <button onClick={()=>apiCall('jpg,png')}>Random Image</button>
@@ -38,7 +38,7 @@ export default function ChooseDog () {
                 </div>
 
                 <br/>
-                <Link to="/choosecat" style={{textDecoration: 'none', color: 'black'}}>Actually, I am a CAT person</Link>
+                <Link to="/choosecat" style={{textDecoration: 'none', color: 'white'}}>Actually, I am a CAT person</Link>
                 <div className="space-needed"></div>
                 <Footer />
             </div>

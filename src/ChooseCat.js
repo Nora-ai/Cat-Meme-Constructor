@@ -19,7 +19,7 @@ export default function ChooseCat () {
 
     return (<>
             <div className="random-cat-box">
-                    <Link to='/'><div className='choose-a-cat'><img src={`https://res.cloudinary.com/alienora/image/upload/v1593973140/56884483-vector-black-silhouette-of-a-walking-cat-_dxtlqm.png`} alt="cat-silhouette"></img></div></Link>
+                    <Link to='/'><div className='choose-a-cat'><img src={`https://res.cloudinary.com/alienora/image/upload/v1594000889/56884483-vector-black-silhouette-of-a-walking-cat-white_h74bsz.png`} alt="cat-silhouette"></img></div></Link>
                 <br/>
                
                 <div className="random-buttons">
@@ -39,7 +39,7 @@ export default function ChooseCat () {
                     </div>
 
                 <br/>
-                <Link to="/choosedog" style={{textDecoration: 'none', color: 'black'}}>Actually, I am a DOG person</Link>
+                <Link to="/choosedog" style={{textDecoration: 'none', color: 'white'}}>Actually, I am a DOG person</Link>
                    
                 <div className="space-needed"></div>
                 <Footer />

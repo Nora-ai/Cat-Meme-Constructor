@@ -32,7 +32,7 @@ export default function MakeMeme (props) {
 
     return (<>
     <div className="meme-ix-two">
-        <h2><Link to='/' style={{textDecoration: 'none', color: 'black'}}>MEME-<span className="ix-flash">IX</span></Link></h2>
+        <h2><Link to='/' style={{textDecoration: 'none', color: 'black'}}><span className="ix-flash">MEME-IX</span></Link></h2>
     </div>
 
     <div className="media">
@@ -52,16 +52,16 @@ export default function MakeMeme (props) {
         <br/>
     <div className="border-buttons">
          <button onClick={() => handleClickColor('rainbow')}>Rainbow</button>
-         <button onClick={() => handleClickColor('blue')}>Blue</button>
+         <button onClick={() => handleClickColor('iridescent')}>Iridescent</button>
          <button onClick={() => handleClickColor('green')}>Green</button>
-         <button onClick={() => handleClickColor('black')}>Black</button>
+         <button onClick={() => handleClickColor('white')}>White</button>
     </div>
         <br/>
     <div className="filter-buttons">
-         <button onClick={() => handleClickFilter('greyscale')}>grey</button>
-         <button onClick={() => handleClickFilter('invert')}>scary</button>
-         <button onClick={() => handleClickFilter('sepia')}>sepia</button>
-         <button onClick={() => handleClickFilter('blur')}>blur</button>
+         <button onClick={() => handleClickFilter('greyscale')}>Grey</button>
+         <button onClick={() => handleClickFilter('invert')}>Scary</button>
+         <button onClick={() => handleClickFilter('sepia')}>Sepia</button>
+         <button onClick={() => handleClickFilter('blur')}>Blur</button>
     </div>
         <br/>
 

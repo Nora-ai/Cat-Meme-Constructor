@@ -7,15 +7,19 @@
     bottom: 0;
     left: 0;
     overflow: hidden;
-    z-index: -100;
+    z-index: -1;
 }
 
 .fullscreen-bg-video {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%;
+    width: auto;
+}
+
+body {
+    background-color: black;
 }
 /* ***********************LANDING PAGE*********************** */
 
@@ -23,6 +27,7 @@
     font-size: 40px;
 }
 
+.meme-ix,
 .ix-flash {
     animation: blinkingText 2s infinite;
 }
@@ -66,12 +71,13 @@
 .cat-button img {
     width: 250px;
     height: 100%;
+    margin-bottom: 35px;
 }
 
 .dog-button img {
     width: 225px;
     height: 100%;
-    margin-bottom: 3px;
+    margin-top: 10px;
 }
 
 
@@ -79,10 +85,14 @@
 
 .choose-a-dog img {
     width: 100px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 15px;
 }
 
 .choose-a-cat img {
     width: 110px;
+    margin-bottom: 30px;
 }
 
 .random-cat-box,
@@ -103,7 +113,8 @@
     margin: 10px;
     border: 2px solid black;
     border-radius: 3px;
-    background: black;
+    background: transparent;
+    border: 1px solid white;
     color: white;
     font-family: 'Roboto';
     width: 150px;
@@ -164,7 +175,7 @@
 
 .caption {
     position: absolute;
-    top: 100px;
+    top: 125px;
     color: white;
     text-shadow: 2px 2px black;
     font-size: 30px;
@@ -192,9 +203,9 @@
 
 .style-buttons button {
     margin: 10px;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 3px;
-    background: black;
+    background: transparent;
     color: white;
     font-family: 'Roboto';
     width: 100px;
@@ -224,9 +235,9 @@
 
 .border-buttons button {
     margin: 10px;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 3px;
-    background: black;
+    background: transparent;
     color: white;
     font-family: 'Roboto';
     width: 100px;
@@ -240,9 +251,9 @@
 
 .filter-buttons button {
     margin: 10px;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 3px;
-    background: black;
+    background: transparent;
     color: white;
     font-family: 'Roboto';
     width: 100px;
@@ -261,7 +272,7 @@
     100%{color: purple}
 }
 
-.blue {
+.iridescent {
     animation: blinkingBorderB 3s infinite;
 }
 
@@ -278,8 +289,8 @@
     border-color: greenyellow;
 }
 
-.black {
-    border-color: black;
+.white {
+    border-color: white;
 }
 
 .greyscale {
@@ -306,6 +317,7 @@
 .reset-button button {
     background-color: black;
     color: white;
+    border-color: purple;
     border-radius: 2px;
     width: 100px;
     height: 30px;
@@ -314,49 +326,47 @@
 
 /* *********************FOOTER********************** */
 
+
 .space-needed {
     height: 170px;
-}
+} 
 
-.grass {
+/* .grass {
     display: flex;
     position: fixed;
     justify-content: center;
     left: 0;
     bottom: 0;
     width: 100%;
-}
+}  */
 
-/* .grass img {
-    width: 75%;
-} */
 
 .footer {
     background-color: black;
-    height: 20px;
+    height: 30px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
 }
 
-.footer:hover {
+/* .footer:hover {
     height: 30px;
     align-items: center;
-}
+} */
 
-.nora-for-web-dev:hover {
+.nora-for-web-dev {
     font-size: 12px;
-    padding-bottom: 7px;
+    padding-bottom: 5px;
     margin: 0;
     position: fixed;
     bottom: 0; 
     animation: blinkingText 2s infinite;
 }
-
 
 /* *********************MEDIA QUERIES*************************** */
 /* MOBILE */
@@ -367,6 +377,7 @@
 
     .meme-ix {
         margin-top: 40px;
+        margin-bottom: 100px;
     }
 
     .are-you-a {
@@ -378,17 +389,17 @@
 
     .animal-flex {
         display: flex;
-        margin-top: 100px;
+        margin-top: 30px;
     }
     
     .dog-button img {
-        width: 120px;
+        width: 150px;
         height: 100%;
         margin-bottom: 3px;
     }
 
     .cat-button img {
-        width: 125px;
+        width: 170px;
         height: 100%;
     }
 
@@ -455,13 +466,10 @@
     .border-buttons button,
     .filter-buttons button {
         margin: 5px;
-        border: 2px solid black;
         border-radius: 3px;
-        background: black;
-        color: white;
-        font-family: 'Roboto';
         width: 65px;
         height: 30px;
+        font-size: 10px;
     }
 
     .dotted {
@@ -478,32 +486,29 @@
 
 /* footer */
 
-    .space-needed {
+    /* .space-needed {
         height: 175px;
-    }
+    } */
 
     .grass img {
         width: 100%;
     }
 
     .footer {
-        height: 20px;
+        height: 25px;
     }
 
-    .footer:hover {
-        height: 30px;
-    }
 }
 
 /* *****************MEDIA QUERIES***************** */
 /* LARGE */
 
 
-@media (min-width: 813px) {
+/* @media (min-width: 813px) {
     .grass img {
        display: none;
     }
-}
+} */
 
 /* ***************MEDIA QUERIES******************* */
 /* TABLET */
@@ -538,10 +543,5 @@
 /* page 3 */
 
 
-/* footer */
-
-    .grass img {
-        width: 100px;
-    }
 
 }

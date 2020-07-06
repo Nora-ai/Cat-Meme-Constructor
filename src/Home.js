@@ -20,7 +20,7 @@ class Home extends Component {
 
             <div className="animal-flex">
                 <Link to="/choosedog">
-                    <div className="dog-button"><img src={`https://res.cloudinary.com/alienora/image/upload/v1593797801/dog_wdcca1.png`} alt="dog-silhouette"></img></div>
+                    <div className="dog-button"><img src={`https://res.cloudinary.com/alienora/image/upload/v1593999627/rsz_dog_small_vwgeff-black_zynwei.png`} alt="dog-silhouette"></img></div>
                 </Link>
 
                 <Link to="/choosecat">
