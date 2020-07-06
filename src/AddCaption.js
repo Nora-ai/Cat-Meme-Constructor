@@ -20,7 +20,7 @@ export default function AddCaption(props) {
                     value={input}
                     onChange={e => updateInput(e.target.value)}
                     />
-                <button className="add-button">+</button>
+                <button className="add-button">add</button>
             </form>
             <p className="caption">{caption}</p>
         </div>

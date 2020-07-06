@@ -21,6 +21,7 @@
 body {
     background-color: black;
 }
+
 /* ***********************LANDING PAGE*********************** */
 
 .meme-ix {
@@ -55,7 +56,7 @@ body {
 }
 
 .are-you-a-dog {
-    padding-top: 150px;
+    padding-top: 200px;
 }
 
 .are-you-a-cat {
@@ -74,7 +75,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .cat-button img {
@@ -113,7 +114,7 @@ body {
     margin-top: 30px;
 }
 
-.random-buttons{
+.random-buttons {
     flex-direction: row;
 }
 
@@ -136,12 +137,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-.cat-image img {
-    width: 450px;
-    height: 100%;
-}
 
-.dog-image img {
+.cat-image img,
+.cat-image img {
     width: 450px;
     height: 100%;
 }
@@ -162,7 +160,26 @@ body {
 .pic-select img {
     width: 450px;
     height: 100%;
+    /* padding: 0;
+    margin: 0; */
 }
+
+/* leaving this here to understand how i have tried to figure out what is going on with the unwanted space */
+
+/* .pic-main {
+    padding-bottom: 0;
+    margin-bottom: 0;
+} */
+
+/* .pic-main {
+    padding-bottom: 0px;
+} */
+
+/* .media {
+    padding: 0;
+    margin: 0;
+} */
+
 
 /* **************************MAKEMEME PAGE***************************** */
 
@@ -333,7 +350,8 @@ body {
 
 .reset-button button {
     background-color: black;
-    color: white;
+    color: grey;
+    font-size: 12px;
     border-color: purple;
     border-radius: 2px;
     width: 100px;
@@ -348,16 +366,6 @@ body {
     height: 170px;
 } 
 
-/* .grass {
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}  */
-
-
 .footer {
     background-color: black;
     height: 30px;
@@ -370,11 +378,6 @@ body {
     bottom: 0;
     width: 100%;
 }
-
-/* .footer:hover {
-    height: 30px;
-    align-items: center;
-} */
 
 .nora-for-web-dev {
     font-size: 12px;
@@ -402,6 +405,10 @@ body {
         padding: 0;
         font-size: 20px;
     }
+    
+    .are-you-a {
+        margin-top: 30px;
+    }
 
     .are-you-a-dog {
         margin-bottom: 0;
@@ -414,7 +421,7 @@ body {
     }
     .animal-flex {
         display: flex;
-        margin-top: 40px;
+        margin-top: 10px;
     }
     
     .dog-button img {
@@ -479,11 +486,11 @@ body {
     .add-button {
         display: flex;
         background-color: black;
-        color: white;
+        color: grey;
         font-style: bold;
-        font-size: 16px;
+        font-size: 10px;
         align-items: center;
-        width: 25px;
+        width: 32px;
         border-radius: 3px;
     }
 
@@ -502,8 +509,6 @@ body {
     }
 
     .reset-button button {
-        background-color: black;
-        color: white;
         border-radius: 3px;
         width: 65px;
         height: 25px;
@@ -511,34 +516,17 @@ body {
 
 /* footer */
 
-    /* .space-needed {
-        height: 175px;
-    } */
-
-    .grass img {
-        width: 100%;
-    }
-
     .footer {
         height: 25px;
     }
 
 }
 
-/* *****************MEDIA QUERIES***************** */
-/* LARGE */
-
-
-/* @media (min-width: 813px) {
-    .grass img {
-       display: none;
-    }
-} */
 
 /* ***************MEDIA QUERIES******************* */
 /* TABLET */
 
-@media (min-width: 768px) and (max-width: 1024) {
+@media (min-width: 768px) and (max-width: 1024) and (orientation: landscape) {
 
 /* page 1 */
 
@@ -553,6 +541,15 @@ body {
     .dog-button img {
         width: 300px;
     }
+
+    .are-you-a-dog {
+        padding: 475px;
+    }
+
+    .animal-flex {
+        margin-top: 50px
+    }
+
 
 /* page 2 */
 

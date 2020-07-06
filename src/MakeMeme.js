@@ -22,6 +22,7 @@ export default function MakeMeme (props) {
 
     const handleClickStyle = (style) => {
         updateStyle(style)
+        updateBorder('white')
     }
 
     const handleClickReset = () => {
@@ -37,7 +38,7 @@ export default function MakeMeme (props) {
 
     <div className="media">
          <div className={`pic-select ${borderColor} ${style}`}>
-             <div className= {`${filter}`}><img src={animalLink} alt="animalimage"></img></div>
+             <div className= {`pic-main ${filter}`}><img src={animalLink} alt="animalimage"></img></div>
          </div>
     </div>
          <AddCaption />
@@ -58,7 +59,7 @@ export default function MakeMeme (props) {
          <button onClick={() => handleClickColor('white')}>White</button>
     </div>
         <br/>
-    <p className="button-title">Filter</p>
+    <p className="button-title">Image Filter</p>
     <div className="filter-buttons">
          <button onClick={() => handleClickFilter('greyscale')}>Grey</button>
          <button onClick={() => handleClickFilter('invert')}>Scary</button>
