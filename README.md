@@ -151,7 +151,9 @@ src
 
 ## Project Delivery
 
-> The Project Delivery section should be completed as your work on your project.
+A lot changed since project inception. I added a second API, so users could choose between cats and dogs. Instead of choosing from categories and breeds, I made the process of choosing a picture more simple and fun. Users can sift through random photos that tend to surprise them. Users can also sift thrgough GIFs. Once the user finds an image or GIF that they like, they move on to the customizing section where they can select border style and colors, add a filter to the image and even add a caption. 
+
+The images are not able to be saved just yet. I wanted to look into local storage but did not have the time.
 
 ### Code Showcase
 
@@ -159,4 +161,10 @@ src
 
 ### Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
+isses with CSS. Still dealing with a padding or margin issue on an image.
+
+### Change Log
+
+- Adding Dog API
+- Rearranged component structure
+- 
